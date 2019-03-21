@@ -662,15 +662,15 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@eggheadio/gatsby-theme-egghead-blog@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@eggheadio/gatsby-theme-egghead-blog/-/gatsby-theme-egghead-blog-1.0.0.tgz#c3edfd8edcfd93ae0f8c74c83466982a22e23bd2"
+"@eggheadio/gatsby-theme-egghead-blog@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@eggheadio/gatsby-theme-egghead-blog/-/gatsby-theme-egghead-blog-1.1.0.tgz#292ae05a869128513e18161c1096db67e5a98ece"
   dependencies:
     "@emotion/core" "^10.0.5"
     "@emotion/styled" "^10.0.5"
     "@mdx-js/mdx" "^0.16.6"
     "@mdx-js/tag" "^0.16.6"
-    core-js "^2.6.1"
+    core-js "2"
     emotion "^10.0.5"
     emotion-server "^10.0.5"
     emotion-theming "^10.0.6"
@@ -680,12 +680,13 @@
     gatsby-link "^2.0.7"
     gatsby-mdx "^0.3.4"
     gatsby-plugin-catch-links "^2.0.9"
+    gatsby-plugin-compile-es6-packages "^1.0.6"
     gatsby-plugin-emotion "^4.0.1"
     gatsby-plugin-feed "^2.0.11"
     gatsby-plugin-google-analytics "^2.0.8"
     gatsby-plugin-meta-redirect "^1.1.1"
     gatsby-plugin-offline "^2.0.20"
-    gatsby-plugin-page-creator "^2.0.7"
+    gatsby-plugin-page-creator "^2.0.10"
     gatsby-plugin-react-helmet "^3.0.5"
     gatsby-plugin-sharp "^2.0.17"
     gatsby-plugin-typography "^2.2.5"
@@ -2670,6 +2671,10 @@ core-js-pure@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.0.0.tgz#a5679adb4875427c8c0488afc93e6f5b7125859b"
 
+core-js@2, core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.0, core-js@^2.6.5:
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
+
 core-js@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.0.0.tgz#a8dbfa978d29bfc263bfb66c556d0ca924c28957"
@@ -2677,10 +2682,6 @@ core-js@3.0.0:
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
-
-core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.0, core-js@^2.6.1, core-js@^2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -4555,6 +4556,13 @@ gatsby-plugin-catch-links@^2.0.9:
     "@babel/runtime" "^7.0.0"
     escape-string-regexp "^1.0.5"
 
+gatsby-plugin-compile-es6-packages@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-compile-es6-packages/-/gatsby-plugin-compile-es6-packages-1.0.6.tgz#4c864d9fa697dc5b41b4b5c9e4215c49b722f086"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    regex-escape "^3.4.8"
+
 gatsby-plugin-emotion@^4.0.1:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.0.6.tgz#5f496df66b2640874fcb073e4f2d8a2a1a4632da"
@@ -4593,7 +4601,7 @@ gatsby-plugin-offline@^2.0.20:
     lodash "^4.17.10"
     workbox-build "^3.6.3"
 
-gatsby-plugin-page-creator@^2.0.10, gatsby-plugin-page-creator@^2.0.7:
+gatsby-plugin-page-creator@^2.0.10:
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.10.tgz#5ad313242afaa21e3aefb5b570d7d10c1faa7665"
   dependencies:
@@ -8894,6 +8902,10 @@ regenerator-transform@^0.13.4:
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.13.4.tgz#18f6763cf1382c69c36df76c6ce122cc694284fb"
   dependencies:
     private "^0.1.6"
+
+regex-escape@^3.4.8:
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.9.tgz#407b413562e2373d56994ff213e693658ea4f8f7"
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"

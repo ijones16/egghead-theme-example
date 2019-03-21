@@ -11,8 +11,10 @@
   "author": "ijones16",
   "license": "MIT",
   "dependencies": {
-    "@eggheadio/gatsby-theme-egghead-blog": "^1.0.0",
-    "gatsby-mdx": "^0.4.4"
+    "@eggheadio/gatsby-theme-egghead-blog": "^1.1.0",
+    "core-js": "2",
+    "gatsby-mdx": "^0.4.4",
+    "gatsby-plugin-compile-es6-packages": "^1.0.6"
   },
   "devDependencies": {
     "gatsby": "^2.2.5",

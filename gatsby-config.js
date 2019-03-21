@@ -1,3 +1,4 @@
+const pkg = require('./package.json')
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
@@ -30,4 +31,16 @@ module.exports = {
     },
   },
   __experimentalThemes: ['@eggheadio/gatsby-theme-egghead-blog'],
+  plugins: [
+    /*
+     * We need to make sure that Webpack processes this theme as ES6, so we add
+     * this plugin and specify the package name in `modules`.
+     */
+    {
+      resolve: 'gatsby-plugin-compile-es6-packages',
+      options: {
+        modules: [pkg.name],
+      },
+    },
+  ],
 }
