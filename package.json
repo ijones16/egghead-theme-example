@@ -1,0 +1,22 @@
+{
+  "name": "egghead-theme-example",
+  "version": "1.0.0",
+  "description": "This blog uses gatsby-theme-egghead-blog.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ijones16",
+  "license": "MIT",
+  "dependencies": {
+    "@eggheadio/gatsby-theme-egghead-blog": "^1.0.0",
+    "gatsby-mdx": "^0.4.4"
+  },
+  "devDependencies": {
+    "gatsby": "^2.2.5",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}
